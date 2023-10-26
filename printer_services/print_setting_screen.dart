@@ -55,7 +55,7 @@ class _PrinterSettingScreenState extends State<PrinterSettingScreen> {
                     // log(snapshot.data.toString());
 
                     if (snapshot.hasData && snapshot.data != null && snapshot.data != PrinterStatus.notFound && isScanning == false) {
-                      printerNameCtrl.text = PrinterService.scanResultPrinter.keys.first;
+                      printerNameCtrl.text = PrinterService.printerName;
                     }
                     else {
                       printerNameCtrl.text = ' ';
