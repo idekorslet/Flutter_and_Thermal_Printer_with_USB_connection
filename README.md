@@ -16,3 +16,8 @@ Because the USB port is used for the printer, so using a WIFI connection for the
 <h3>Alur pembuatan invoice / Invoice creation flow</h3>
 
 ![invoice_flow](https://github.com/idekorslet/Flutter_and_Thermal_Printer_with_USB_connection/assets/80518183/877ed6d6-4207-495d-9166-56caaddc9927)
+
+## Support
+|  |  |  |
+|--|--|--|
+| <a href="https://saweria.co/idekorslet"><img alt="saweria" width="180" src="https://user-images.githubusercontent.com/80518183/216806553-4a11d0ef-6257-461b-a3f2-430910574269.svg"></a> | | <a href="https://buymeacoffee.com/idekorslet"><img alt='Buy me a coffee' width="180" src="https://user-images.githubusercontent.com/80518183/216806363-a11d0282-517a-4512-9733-567e0d547078.png"> </a> |
