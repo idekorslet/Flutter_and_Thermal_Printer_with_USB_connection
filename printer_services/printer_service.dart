@@ -7,7 +7,7 @@ import 'package:esc_pos_utils_plus/esc_pos_utils.dart';
 import 'package:flutter_pos_printer_platform_image_3/flutter_pos_printer_platform_image_3.dart';
 
 class PrinterService {
-  static Map<String, dynamic> scanResultPrinter = {};
+  static late String printerName;
   static late Completer<PrinterDevice> _completer;
   static late PrinterDevice _printer;
   static USBStatus _currentUsbStatus = USBStatus.none;
@@ -98,15 +98,15 @@ class PrinterService {
       });
 
       try {
-        scanResultPrinter = {};
+        printerName = '';
         _printer = await _completer.future.timeout(const Duration(seconds: 5))
           .whenComplete(() {
             log('[printer_service] scanning timer done');
             _isScanning = false;
           });
 
-        scanResultPrinter = PrinterModel.instance.toMap(printer: _printer);
-        _isPrinterAvailable = scanResultPrinter.isNotEmpty;
+        printerName = _printer.name;
+        _isPrinterAvailable = printerName.isNotEmpty;
 
         _refreshPrinterStatus();
       } on TimeoutException catch (e) {
@@ -229,28 +229,4 @@ class PrinterStatus {
   static const notConnected = 'Not connected';
   static const scanning = 'Searching for printer';
   static const printing = 'Printing';
-}
-
-class PrinterModel {
-  PrinterModel._privateConst();
-
-  static final PrinterModel instance = PrinterModel._privateConst();
-
-  factory PrinterModel() => instance;
-
-  Map<String, dynamic> toMap({required PrinterDevice? printer}) {
-    Map<String, dynamic> printerData = {};
-
-    if (printer != null) {
-      printerData[printer.name] = {
-        "operatingSystem": printer.operatingSystem,
-        "name": printer.name,
-        "address": printer.address ?? 'unknown',
-        "vendorId": printer.vendorId ?? 'unknown',
-        "productId": printer.productId ?? 'unknown',
-      };
-    }
-
-    return printerData;
-  }
 }
