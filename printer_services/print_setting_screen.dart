@@ -29,6 +29,7 @@ class _PrinterSettingScreenState extends State<PrinterSettingScreen> {
 
   @override
   void dispose() {
+    printerNameCtrl.dispose();
     super.dispose();
   }
 
