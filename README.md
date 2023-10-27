@@ -17,6 +17,10 @@ Because the USB port is used for the printer, so using a WIFI connection for the
 
 ![invoice_flow](https://github.com/idekorslet/Flutter_and_Thermal_Printer_with_USB_connection/assets/80518183/877ed6d6-4207-495d-9166-56caaddc9927)
 
+## Video tutorial:
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/vPEPK_9KSYs/0.jpg)](https://youtu.be/vPEPK_9KSYs)
+
+
 ## Support
 |  |  |  |
 |--|--|--|
