@@ -25,3 +25,11 @@ Because the USB port is used for the printer, so using a WIFI connection for the
 |  |  |  |
 |--|--|--|
 | <a href="https://saweria.co/idekorslet"><img alt="saweria" width="180" src="https://user-images.githubusercontent.com/80518183/216806553-4a11d0ef-6257-461b-a3f2-430910574269.svg"></a> | | <a href="https://buymeacoffee.com/idekorslet"><img alt='Buy me a coffee' width="180" src="https://user-images.githubusercontent.com/80518183/216806363-a11d0282-517a-4512-9733-567e0d547078.png"> </a> |
+
+<h3>Additional</h3>
+Jika ada kendala lain misal tidak bisa konek atau printer tidak terdeteksi, bisa dicoba edit file USPrinterService.kt dan ganti kodingannya dengan file USBPrinterService.kt yg ada disini.<br>
+If facing another problem such as cannot connect to the printer or the printer not detected, please try to edit the USPrinterService.kt file and replace the codes with this USPrinterService.kt codes version.<br><br>
+
+untuk lokasi file USBPrinterService.kt ada di / the location of USPrinterService.kt:<br>
+[project_folder]\print_invoice_with_usb_connection\windows\flutter\ephemeral\.plugin_symlinks\flutter_pos_printer_platform_image_3\android\src\main\kotlin\com\sersoluciones\flutter_pos_printer_platform\usb
+
