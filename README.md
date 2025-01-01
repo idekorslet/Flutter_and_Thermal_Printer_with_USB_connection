@@ -28,8 +28,19 @@ Because the USB port is used for the printer, so using a WIFI connection for the
 
 <h3>Additional</h3>
 Jika ada kendala lain misal tidak bisa konek atau printer tidak terdeteksi, bisa dicoba edit file USPrinterService.kt dan ganti kodingannya dengan file USBPrinterService.kt yg ada disini.<br>
-If facing another problem such as cannot connect to the printer or the printer not detected, please try to edit the USPrinterService.kt file and replace the codes with this USPrinterService.kt codes version.<br><br>
+If facing another problem such as cannot connect to the printer or the printer not detected, please try to edit the USPrinterService.kt file and replace the codes with this USPrinterService.kt codes version.<br>
+Dan coba juga ubah file usb.dart<br>
+And also try to edit the usb.dart file <br><br>
 
 untuk lokasi file USBPrinterService.kt ada di / the location of USPrinterService.kt:<br>
-[project_folder]\print_invoice_with_usb_connection\windows\flutter\ephemeral\.plugin_symlinks\flutter_pos_printer_platform_image_3\android\src\main\kotlin\com\sersoluciones\flutter_pos_printer_platform\usb
+[project_folder]\print_invoice_with_usb_connection\windows\flutter\ephemeral\.plugin_symlinks\flutter_pos_printer_platform_image_3\android\src\main\kotlin\com\sersoluciones\flutter_pos_printer_platform\usb<br>
+<br>
+untuk lokasi file usb.dart / the location of usb.dart: <br>
+![image](https://github.com/user-attachments/assets/09f60da9-da0a-4465-a2f4-815c84b227c9) <br>
+
+diubah menjadi seperti ini / change to like this (add Platform.isAndroid): <br>
+![image](https://github.com/user-attachments/assets/a48f1fce-ae62-4a5e-bc6a-281c380df2b7)
+
+
+
 
